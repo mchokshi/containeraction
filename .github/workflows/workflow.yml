@@ -9,8 +9,8 @@ jobs:
     - name: run the action
       id: hello
       uses: ./
-      with:
-        myInput: ''
+      #with:
+        #myInput: 'Milind'
     - name: output the memory
       run: |
         echo ${{ steps.hello.outputs.memory }}
